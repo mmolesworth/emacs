@@ -12,9 +12,27 @@
 ;; install dependencies with el-get
 (require 'el-get-settings)
 
-;---------------;
-;;; Utilities ;;;
-;---------------;
+;;--------------------------;;
+;;   Package Repositories   ;;
+;;--------------------------;;
+(require 'package)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
+;;---------------;;
+;;   Utilities   ;;
+;;---------------;;
+
+;; activate installed packages
+(package-initialize)
+
+(package-install 'rjsx-mode)
+
+
+;; activate installed packages
+(package-initialize)
+                                        
+;;rjsx-mode
+;;(require 'rjsx-mode)
 
 ;; Git
 (include-plugin "magit")
@@ -87,3 +105,10 @@
 (load 
  (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
  'noerror)
+
+
+
+
+
+
+
