@@ -21,7 +21,7 @@
                magit
                markdown-mode
                matlab-mode
-               nxhtml
+               ;nxhtml
                pydoc-info
                scss-mode
                popup
@@ -42,4 +42,27 @@
 (el-get 'sync my-packages)
 
 (provide 'el-get-settings)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
